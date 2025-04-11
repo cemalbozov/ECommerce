@@ -1,0 +1,38 @@
+﻿@model CategoryModel
+
+<section>
+    <div class="container my-5">
+        <div class="row gy-3">
+            @await Html.PartialAsync("_sidebar")
+            <div class="col-lg-9">
+
+                <div class="acc-title">Kategori Ekle</div>
+
+                <div class="acc-form">
+                    <form name="adress-form" class="row g-1 mb-4" asp-controller="Admin" asp-action="CategoryCreate" method="POST">
+                        <div asp-validation-summary="All" class="text-danger"></div>
+                        <div class="col-12 col-lg-6">
+                            <label asp-for="Name" class="form-text"></label>
+                            <input class="form-control" asp-for="Name">
+                            <span asp-validation-for="Name" class="text-danger"></span>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <label asp-for="Url" class="form-text"></label>
+                            <input class="form-control" asp-for="Url">
+                            <span asp-validation-for="Url" class="text-danger"></span>
+                        </div>
+                        <div class="col-12">
+                            <label class="form-text" asp-for="ParentCategory"></label>
+                            <select asp-for="ParentCategory.Id" asp-items="@(new SelectList(Model.ParentCategories, "Id", "Name"))" class="form-control">
+                            </select>
+                            <span asp-validation-for="ParentCategory.Id" class="text-danger"></span>
+                        </div>
+                        <div class="col-12 text-center my-4">
+                            <button type="submit" class="btn btn-secondary">Kategori Ekle</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,37 @@
+﻿<section>
+        <div class="row gy-3">
+            @await Component.InvokeAsync("AccountSideBar")
+            <div class="col-lg-9 mb-4">
+                <div class="acc-title">Üyelik Bilgilerim</div>
+                <div class="acc-form">
+                    <form name="accform" class="row g-1 mb-4" action="/account/uyelik-bilgilerim/update" method="POST">
+                        <div class="col-12 col-lg-6">
+                            <div class="form-text">Adınız</div>
+                            <input type="text" value="" class="form-control " disabled>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <div class="form-text">Soyadınız</div>
+                            <input type="text" value="" class="form-control " disabled>
+                        </div>
+
+                        <div class="col-12 col-lg-6">
+                            <div class="form-text">E-posta</div>
+                            <input type="email" value="" class="form-control " disabled>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <div class="form-text">Telefon Numaranız</div>
+                            <input type="tel" name="phone" value="" class="form-control ">
+                            <label class="phone-check check form-label mt-3 mx-3 d-none">
+                                11 haneli Geçerli Telefon
+                                numarası
+                                girin
+                            </label>
+                        </div>
+                        <div class="col-12 text-center my-4">
+                            <button type="submit" class="btn btn-secondary">Kaydet</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+</section>

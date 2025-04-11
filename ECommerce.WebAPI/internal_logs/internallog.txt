@@ -1,0 +1,246 @@
+2024-03-10 16:53:46.0209 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-03-10 16:53:46.0472 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.8.2366. Product version: 5.2.8+f586f1341c46fa38aaaff4c641e7f0fa7e813943. GlobalAssemblyCache: False
+2024-03-10 16:53:46.0692 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\BOZOV\source\repos\ECommerce\ECommerce.WebAPI\nlog.config
+2024-03-10 16:53:46.0872 Info Configuration initialized.
+2024-03-11 00:36:32.9519 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-03-11 00:36:32.9700 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.8.2366. Product version: 5.2.8+f586f1341c46fa38aaaff4c641e7f0fa7e813943. GlobalAssemblyCache: False
+2024-03-11 00:36:32.9859 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\BOZOV\source\repos\ECommerce\ECommerce.WebAPI\nlog.config
+2024-03-11 00:36:32.9978 Info Configuration initialized.
+2024-03-11 00:53:54.5649 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-03-11 00:53:54.5840 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.8.2366. Product version: 5.2.8+f586f1341c46fa38aaaff4c641e7f0fa7e813943. GlobalAssemblyCache: False
+2024-03-11 00:53:54.6008 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\BOZOV\source\repos\ECommerce\ECommerce.WebAPI\nlog.config
+2024-03-11 00:53:54.6122 Info Configuration initialized.
+2024-03-11 14:53:38.2982 Info Message Template Auto Format enabled
+2024-03-11 14:53:38.5573 Info Adding target FileTarget(Name=logfile)
+2024-03-11 14:53:38.5804 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\BOZOV\source\repos\ECommerce\ECommerce.WebAPI\nlog.config
+2024-03-11 15:00:36.1266 Info Message Template Auto Format enabled
+2024-03-11 15:00:36.1839 Info Adding target FileTarget(Name=logfile)
+2024-03-11 15:00:36.2102 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\BOZOV\source\repos\ECommerce\ECommerce.WebAPI\nlog.config
+2024-03-11 16:43:27.9725 Info Message Template Auto Format enabled
+2024-03-11 16:43:28.0922 Info Adding target FileTarget(Name=logfile)
+2024-03-11 16:43:28.1256 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\BOZOV\source\repos\ECommerce\ECommerce.WebAPI\nlog.config
+2024-03-11 16:48:46.0011 Info Message Template Auto Format enabled
+2024-03-11 16:48:46.1153 Info Adding target FileTarget(Name=logfile)
+2024-03-11 16:48:46.1481 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\BOZOV\source\repos\ECommerce\ECommerce.WebAPI\nlog.config
+2024-03-11 16:51:57.7388 Info Message Template Auto Format enabled
+2024-03-11 16:51:57.7948 Info Adding target FileTarget(Name=logfile)
+2024-03-11 16:51:57.8179 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\BOZOV\source\repos\ECommerce\ECommerce.WebAPI\nlog.config
+2024-03-11 16:57:15.2938 Info Message Template Auto Format enabled
+2024-03-11 16:57:15.4173 Info Adding target FileTarget(Name=logfile)
+2024-03-11 16:57:15.4501 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\BOZOV\source\repos\ECommerce\ECommerce.WebAPI\nlog.config
+2024-03-11 17:15:43.1329 Info Message Template Auto Format enabled
+2024-03-11 17:15:43.1916 Info Adding target FileTarget(Name=logfile)
+2024-03-11 17:15:43.2175 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\BOZOV\source\repos\ECommerce\ECommerce.WebAPI\nlog.config
+2024-03-11 17:30:50.9685 Info Message Template Auto Format enabled
+2024-03-11 17:30:51.0772 Info Adding target FileTarget(Name=logfile)
+2024-03-11 17:30:51.1077 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\BOZOV\source\repos\ECommerce\ECommerce.WebAPI\nlog.config
+2024-03-11 17:35:23.3991 Info Message Template Auto Format enabled
+2024-03-11 17:35:23.5194 Info Adding target FileTarget(Name=logfile)
+2024-03-11 17:35:23.5493 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\BOZOV\source\repos\ECommerce\ECommerce.WebAPI\nlog.config
+2024-03-11 19:47:43.4847 Info Message Template Auto Format enabled
+2024-03-11 19:47:43.6001 Info Adding target FileTarget(Name=logfile)
+2024-03-11 19:47:43.6303 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\BOZOV\source\repos\ECommerce\ECommerce.WebAPI\nlog.config
+2024-03-11 21:57:43.7477 Info Message Template Auto Format enabled
+2024-03-11 21:57:43.8815 Info Adding target FileTarget(Name=logfile)
+2024-03-11 21:57:43.9186 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\BOZOV\source\repos\ECommerce\ECommerce.WebAPI\nlog.config
+2024-03-11 21:59:33.1781 Info Message Template Auto Format enabled
+2024-03-11 21:59:33.2977 Info Adding target FileTarget(Name=logfile)
+2024-03-11 21:59:33.3249 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\BOZOV\source\repos\ECommerce\ECommerce.WebAPI\nlog.config
+2024-03-11 22:42:25.3595 Info Message Template Auto Format enabled
+2024-03-11 22:42:25.5170 Info Adding target FileTarget(Name=logfile)
+2024-03-11 22:42:25.5667 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\BOZOV\source\repos\ECommerce\ECommerce.WebAPI\nlog.config
+2024-03-12 01:26:23.1838 Info Message Template Auto Format enabled
+2024-03-12 01:26:23.5028 Info Adding target FileTarget(Name=logfile)
+2024-03-12 01:26:23.5348 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\BOZOV\source\repos\ECommerce\ECommerce.WebAPI\nlog.config
+2024-03-12 11:26:59.0552 Info Message Template Auto Format enabled
+2024-03-12 11:26:59.4141 Info Adding target FileTarget(Name=logfile)
+2024-03-12 11:26:59.4997 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\BOZOV\source\repos\ECommerce\ECommerce.WebAPI\nlog.config
+2024-03-12 21:22:29.6987 Info Message Template Auto Format enabled
+2024-03-12 21:22:30.1625 Info Adding target FileTarget(Name=logfile)
+2024-03-12 21:22:30.2097 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\BOZOV\source\repos\ECommerce\ECommerce.WebAPI\nlog.config
+2024-03-12 21:57:31.3802 Info Message Template Auto Format enabled
+2024-03-12 21:57:31.5103 Info Adding target FileTarget(Name=logfile)
+2024-03-12 21:57:31.5414 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\BOZOV\source\repos\ECommerce\ECommerce.WebAPI\nlog.config
+2024-03-12 23:23:10.4801 Info Message Template Auto Format enabled
+2024-03-12 23:23:10.6137 Info Adding target FileTarget(Name=logfile)
+2024-03-12 23:23:10.6520 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\BOZOV\source\repos\ECommerce\ECommerce.WebAPI\nlog.config
+2024-03-12 23:30:25.0791 Info Message Template Auto Format enabled
+2024-03-12 23:30:25.1969 Info Adding target FileTarget(Name=logfile)
+2024-03-12 23:30:25.2276 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\BOZOV\source\repos\ECommerce\ECommerce.WebAPI\nlog.config
+2024-03-12 23:41:01.5597 Info Message Template Auto Format enabled
+2024-03-12 23:41:01.6719 Info Adding target FileTarget(Name=logfile)
+2024-03-12 23:41:01.7054 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\BOZOV\source\repos\ECommerce\ECommerce.WebAPI\nlog.config
+2024-03-13 13:39:19.2649 Info Message Template Auto Format enabled
+2024-03-13 13:39:19.5919 Info Adding target FileTarget(Name=logfile)
+2024-03-13 13:39:19.6365 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\BOZOV\source\repos\ECommerce\ECommerce.WebAPI\nlog.config
+2024-03-14 13:50:20.7645 Info Message Template Auto Format enabled
+2024-03-14 13:50:21.4788 Info Adding target FileTarget(Name=logfile)
+2024-03-14 13:50:21.5705 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\BOZOV\source\repos\ECommerce\ECommerce.WebAPI\nlog.config
+2024-03-14 14:15:28.7799 Info Message Template Auto Format enabled
+2024-03-14 14:15:28.9036 Info Adding target FileTarget(Name=logfile)
+2024-03-14 14:15:28.9447 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\BOZOV\source\repos\ECommerce\ECommerce.WebAPI\nlog.config
+2024-03-14 17:01:01.2343 Info Message Template Auto Format enabled
+2024-03-14 17:01:01.5360 Info Adding target FileTarget(Name=logfile)
+2024-03-14 17:01:01.5649 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\BOZOV\source\repos\ECommerce\ECommerce.WebAPI\nlog.config
+2024-03-14 17:47:40.0181 Info Message Template Auto Format enabled
+2024-03-14 17:47:40.1876 Info Adding target FileTarget(Name=logfile)
+2024-03-14 17:47:40.2285 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\BOZOV\source\repos\ECommerce\ECommerce.WebAPI\nlog.config
+2024-03-14 17:51:29.7507 Info Message Template Auto Format enabled
+2024-03-14 17:51:29.8659 Info Adding target FileTarget(Name=logfile)
+2024-03-14 17:51:29.8943 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\BOZOV\source\repos\ECommerce\ECommerce.WebAPI\nlog.config
+2024-03-14 23:48:17.5516 Info Message Template Auto Format enabled
+2024-03-14 23:48:17.8165 Info Adding target FileTarget(Name=logfile)
+2024-03-14 23:48:17.8971 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\BOZOV\source\repos\ECommerce\ECommerce.WebAPI\nlog.config
+2024-03-14 23:56:54.7216 Info Message Template Auto Format enabled
+2024-03-14 23:56:54.8402 Info Adding target FileTarget(Name=logfile)
+2024-03-14 23:56:54.8738 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\BOZOV\source\repos\ECommerce\ECommerce.WebAPI\nlog.config
+2024-03-15 00:16:43.3920 Info Message Template Auto Format enabled
+2024-03-15 00:16:43.5023 Info Adding target FileTarget(Name=logfile)
+2024-03-15 00:16:43.5440 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\BOZOV\source\repos\ECommerce\ECommerce.WebAPI\nlog.config
+2024-03-15 00:20:56.8084 Info Message Template Auto Format enabled
+2024-03-15 00:20:56.9334 Info Adding target FileTarget(Name=logfile)
+2024-03-15 00:20:56.9833 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\BOZOV\source\repos\ECommerce\ECommerce.WebAPI\nlog.config
+2024-03-15 00:21:17.8839 Info Message Template Auto Format enabled
+2024-03-15 00:21:18.0055 Info Adding target FileTarget(Name=logfile)
+2024-03-15 00:21:18.0370 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\BOZOV\source\repos\ECommerce\ECommerce.WebAPI\nlog.config
+2024-03-15 00:25:27.4100 Info Message Template Auto Format enabled
+2024-03-15 00:25:27.5244 Info Adding target FileTarget(Name=logfile)
+2024-03-15 00:25:27.5583 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\BOZOV\source\repos\ECommerce\ECommerce.WebAPI\nlog.config
+2024-03-15 00:31:38.2345 Info Message Template Auto Format enabled
+2024-03-15 00:31:38.3892 Info Adding target FileTarget(Name=logfile)
+2024-03-15 00:31:38.4479 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\BOZOV\source\repos\ECommerce\ECommerce.WebAPI\nlog.config
+2024-03-15 00:32:12.2555 Info Message Template Auto Format enabled
+2024-03-15 00:32:12.4247 Info Adding target FileTarget(Name=logfile)
+2024-03-15 00:32:12.4759 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\BOZOV\source\repos\ECommerce\ECommerce.WebAPI\nlog.config
+2024-03-15 13:23:13.5576 Info Message Template Auto Format enabled
+2024-03-15 13:23:13.8847 Info Adding target FileTarget(Name=logfile)
+2024-03-15 13:23:13.9197 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\BOZOV\source\repos\ECommerce\ECommerce.WebAPI\nlog.config
+2024-03-16 13:27:01.5326 Info Message Template Auto Format enabled
+2024-03-16 13:27:01.6055 Info Adding target FileTarget(Name=logfile)
+2024-03-16 13:27:01.6277 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\BOZOV\source\repos\ECommerce\ECommerce.WebAPI\nlog.config
+2024-03-16 13:27:03.0394 Info AppDomain Shutting down. LogFactory closing...
+2024-03-16 13:27:03.0489 Info LogFactory has been closed.
+2024-03-16 13:27:35.4437 Info Message Template Auto Format enabled
+2024-03-16 13:27:35.5225 Info Adding target FileTarget(Name=logfile)
+2024-03-16 13:27:35.5595 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\BOZOV\source\repos\ECommerce\ECommerce.WebAPI\nlog.config
+2024-03-16 13:27:37.7924 Info AppDomain Shutting down. LogFactory closing...
+2024-03-16 13:27:37.8035 Info LogFactory has been closed.
+2024-03-16 13:53:44.5472 Info Message Template Auto Format enabled
+2024-03-16 13:53:44.6139 Info Adding target FileTarget(Name=logfile)
+2024-03-16 13:53:44.6390 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\BOZOV\source\repos\ECommerce\ECommerce.WebAPI\nlog.config
+2024-03-16 13:53:46.3677 Info AppDomain Shutting down. LogFactory closing...
+2024-03-16 13:53:46.3790 Info LogFactory has been closed.
+2024-03-16 13:54:15.6231 Info Message Template Auto Format enabled
+2024-03-16 13:54:15.6916 Info Adding target FileTarget(Name=logfile)
+2024-03-16 13:54:15.7194 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\BOZOV\source\repos\ECommerce\ECommerce.WebAPI\nlog.config
+2024-03-16 13:54:17.5033 Info AppDomain Shutting down. LogFactory closing...
+2024-03-16 13:54:17.5180 Info LogFactory has been closed.
+2024-03-16 15:07:00.2993 Info Message Template Auto Format enabled
+2024-03-16 15:07:00.7032 Info Adding target FileTarget(Name=logfile)
+2024-03-16 15:07:00.7518 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\BOZOV\source\repos\ECommerce\ECommerce.WebAPI\nlog.config
+2024-03-16 23:36:22.1682 Info Message Template Auto Format enabled
+2024-03-16 23:36:22.8477 Info Adding target FileTarget(Name=logfile)
+2024-03-16 23:36:22.9222 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\BOZOV\source\repos\ECommerce\ECommerce.WebAPI\nlog.config
+2024-03-16 23:52:04.9043 Info Message Template Auto Format enabled
+2024-03-16 23:52:05.0184 Info Adding target FileTarget(Name=logfile)
+2024-03-16 23:52:05.0526 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\BOZOV\source\repos\ECommerce\ECommerce.WebAPI\nlog.config
+2024-03-18 13:14:33.7952 Info Message Template Auto Format enabled
+2024-03-18 13:14:33.8825 Info Adding target FileTarget(Name=logfile)
+2024-03-18 13:14:33.9080 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\BOZOV\source\repos\ECommerce\ECommerce.WebAPI\nlog.config
+2024-03-18 13:14:36.0515 Info AppDomain Shutting down. LogFactory closing...
+2024-03-18 13:14:36.0649 Info LogFactory has been closed.
+2024-03-18 13:14:54.8478 Info Message Template Auto Format enabled
+2024-03-18 13:14:54.9399 Info Adding target FileTarget(Name=logfile)
+2024-03-18 13:14:54.9721 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\BOZOV\source\repos\ECommerce\ECommerce.WebAPI\nlog.config
+2024-03-18 13:14:56.9763 Info AppDomain Shutting down. LogFactory closing...
+2024-03-18 13:14:56.9933 Info LogFactory has been closed.
+2024-03-18 14:14:38.0280 Info Message Template Auto Format enabled
+2024-03-18 14:14:38.3697 Info Adding target FileTarget(Name=logfile)
+2024-03-18 14:14:38.4018 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\BOZOV\source\repos\ECommerce\ECommerce.WebAPI\nlog.config
+2024-03-18 14:50:16.9633 Info Message Template Auto Format enabled
+2024-03-18 14:50:17.1097 Info Adding target FileTarget(Name=logfile)
+2024-03-18 14:50:17.1475 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\BOZOV\source\repos\ECommerce\ECommerce.WebAPI\nlog.config
+2024-03-18 15:02:05.3543 Info Message Template Auto Format enabled
+2024-03-18 15:02:05.6564 Info Adding target FileTarget(Name=logfile)
+2024-03-18 15:02:05.6903 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\BOZOV\source\repos\ECommerce\ECommerce.WebAPI\nlog.config
+2024-03-18 20:44:56.3211 Info Message Template Auto Format enabled
+2024-03-18 20:44:56.6087 Info Adding target FileTarget(Name=logfile)
+2024-03-18 20:44:56.6466 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\BOZOV\source\repos\ECommerce\ECommerce.WebAPI\nlog.config
+2024-03-18 23:16:36.3069 Info Message Template Auto Format enabled
+2024-03-18 23:16:36.6059 Info Adding target FileTarget(Name=logfile)
+2024-03-18 23:16:36.6396 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\BOZOV\source\repos\ECommerce\ECommerce.WebAPI\nlog.config
+2024-03-18 23:17:45.3947 Info Message Template Auto Format enabled
+2024-03-18 23:17:45.5068 Info Adding target FileTarget(Name=logfile)
+2024-03-18 23:17:45.5390 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\BOZOV\source\repos\ECommerce\ECommerce.WebAPI\nlog.config
+2024-03-18 23:27:28.0358 Info Message Template Auto Format enabled
+2024-03-18 23:27:28.1488 Info Adding target FileTarget(Name=logfile)
+2024-03-18 23:27:28.1815 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\BOZOV\source\repos\ECommerce\ECommerce.WebAPI\nlog.config
+2024-03-18 23:29:04.2374 Info Message Template Auto Format enabled
+2024-03-18 23:29:04.3437 Info Adding target FileTarget(Name=logfile)
+2024-03-18 23:29:04.3821 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\BOZOV\source\repos\ECommerce\ECommerce.WebAPI\nlog.config
+2024-03-18 23:32:19.4675 Info Message Template Auto Format enabled
+2024-03-18 23:32:19.5813 Info Adding target FileTarget(Name=logfile)
+2024-03-18 23:32:19.6184 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\BOZOV\source\repos\ECommerce\ECommerce.WebAPI\nlog.config
+2024-03-18 23:38:02.9972 Info Message Template Auto Format enabled
+2024-03-18 23:38:03.1169 Info Adding target FileTarget(Name=logfile)
+2024-03-18 23:38:03.1527 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\BOZOV\source\repos\ECommerce\ECommerce.WebAPI\nlog.config
+2024-03-18 23:38:54.3650 Info Message Template Auto Format enabled
+2024-03-18 23:38:54.4796 Info Adding target FileTarget(Name=logfile)
+2024-03-18 23:38:54.5129 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\BOZOV\source\repos\ECommerce\ECommerce.WebAPI\nlog.config
+2024-03-18 23:48:45.1244 Info Message Template Auto Format enabled
+2024-03-18 23:48:45.2453 Info Adding target FileTarget(Name=logfile)
+2024-03-18 23:48:45.2771 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\BOZOV\source\repos\ECommerce\ECommerce.WebAPI\nlog.config
+2024-03-19 00:15:05.0364 Info Message Template Auto Format enabled
+2024-03-19 00:15:05.1475 Info Adding target FileTarget(Name=logfile)
+2024-03-19 00:15:05.1881 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\BOZOV\source\repos\ECommerce\ECommerce.WebAPI\nlog.config
+2024-03-19 00:32:07.3670 Info Message Template Auto Format enabled
+2024-03-19 00:32:07.4803 Info Adding target FileTarget(Name=logfile)
+2024-03-19 00:32:07.5231 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\BOZOV\source\repos\ECommerce\ECommerce.WebAPI\nlog.config
+2024-03-19 00:36:22.0305 Info Message Template Auto Format enabled
+2024-03-19 00:36:22.1417 Info Adding target FileTarget(Name=logfile)
+2024-03-19 00:36:22.1782 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\BOZOV\source\repos\ECommerce\ECommerce.WebAPI\nlog.config
+2024-03-19 00:45:23.4741 Info Message Template Auto Format enabled
+2024-03-19 00:45:23.5821 Info Adding target FileTarget(Name=logfile)
+2024-03-19 00:45:23.6147 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\BOZOV\source\repos\ECommerce\ECommerce.WebAPI\nlog.config
+2024-03-19 00:47:00.3537 Info Message Template Auto Format enabled
+2024-03-19 00:47:00.5724 Info Adding target FileTarget(Name=logfile)
+2024-03-19 00:47:00.6513 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\BOZOV\source\repos\ECommerce\ECommerce.WebAPI\nlog.config
+2024-03-19 00:48:29.2168 Info Message Template Auto Format enabled
+2024-03-19 00:48:29.3333 Info Adding target FileTarget(Name=logfile)
+2024-03-19 00:48:29.3647 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\BOZOV\source\repos\ECommerce\ECommerce.WebAPI\nlog.config
+2024-03-19 01:00:33.8437 Info Message Template Auto Format enabled
+2024-03-19 01:00:33.9513 Info Adding target FileTarget(Name=logfile)
+2024-03-19 01:00:33.9853 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\BOZOV\source\repos\ECommerce\ECommerce.WebAPI\nlog.config
+2024-03-19 01:05:48.5813 Info Message Template Auto Format enabled
+2024-03-19 01:05:48.7156 Info Adding target FileTarget(Name=logfile)
+2024-03-19 01:05:48.7545 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\BOZOV\source\repos\ECommerce\ECommerce.WebAPI\nlog.config
+2024-03-19 01:10:52.1563 Info Message Template Auto Format enabled
+2024-03-19 01:10:52.2837 Info Adding target FileTarget(Name=logfile)
+2024-03-19 01:10:52.3129 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\BOZOV\source\repos\ECommerce\ECommerce.WebAPI\nlog.config
+2024-03-19 11:32:37.6829 Info Message Template Auto Format enabled
+2024-03-19 11:32:37.8847 Info Adding target FileTarget(Name=logfile)
+2024-03-19 11:32:37.9872 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\BOZOV\source\repos\ECommerce\ECommerce.WebAPI\nlog.config
+2024-03-19 11:49:20.6668 Info Message Template Auto Format enabled
+2024-03-19 11:49:20.7763 Info Adding target FileTarget(Name=logfile)
+2024-03-19 11:49:20.8139 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\BOZOV\source\repos\ECommerce\ECommerce.WebAPI\nlog.config
+2024-03-19 11:52:27.7173 Info Message Template Auto Format enabled
+2024-03-19 11:52:27.8350 Info Adding target FileTarget(Name=logfile)
+2024-03-19 11:52:27.8646 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\BOZOV\source\repos\ECommerce\ECommerce.WebAPI\nlog.config
+2024-03-19 12:09:23.2045 Info Message Template Auto Format enabled
+2024-03-19 12:09:23.3362 Info Adding target FileTarget(Name=logfile)
+2024-03-19 12:09:23.3643 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\BOZOV\source\repos\ECommerce\ECommerce.WebAPI\nlog.config
+2024-03-19 12:15:43.1129 Info Message Template Auto Format enabled
+2024-03-19 12:15:43.2192 Info Adding target FileTarget(Name=logfile)
+2024-03-19 12:15:43.2471 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\BOZOV\source\repos\ECommerce\ECommerce.WebAPI\nlog.config
+2024-03-19 12:16:58.6422 Info Message Template Auto Format enabled
+2024-03-19 12:16:58.7552 Info Adding target FileTarget(Name=logfile)
+2024-03-19 12:16:58.7877 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\BOZOV\source\repos\ECommerce\ECommerce.WebAPI\nlog.config
+2024-03-19 13:30:14.3132 Info Message Template Auto Format enabled
+2024-03-19 13:30:14.6140 Info Adding target FileTarget(Name=logfile)
+2024-03-19 13:30:14.6503 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\BOZOV\source\repos\ECommerce\ECommerce.WebAPI\nlog.config
+2024-03-19 13:49:25.0730 Info Message Template Auto Format enabled
+2024-03-19 13:49:25.1897 Info Adding target FileTarget(Name=logfile)
+2024-03-19 13:49:25.2217 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\BOZOV\source\repos\ECommerce\ECommerce.WebAPI\nlog.config
+2024-03-19 18:53:18.3448 Info Message Template Auto Format enabled
+2024-03-19 18:53:18.6741 Info Adding target FileTarget(Name=logfile)
+2024-03-19 18:53:18.7056 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\BOZOV\source\repos\ECommerce\ECommerce.WebAPI\nlog.config

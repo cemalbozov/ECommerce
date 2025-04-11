@@ -1,0 +1,31 @@
+﻿@model ECommerce.WebUI.ViewModels.ProductListViewModel
+
+@{
+    var products = Model.Products;
+}
+
+<section class="pt-3" style="min-height: 600px ;">
+    <div class="container">
+        @if (products.Count == 0)
+        {
+            <header>
+                <h3 class="mb-md-3 mb-0">@ViewBag.Search İçin Sonuç Bulunamadı</h3>
+            </header>
+            @await Html.PartialAsync("_noproduct")
+        }
+        else
+        {
+            <header>
+                <h3 class="mb-md-3 mb-0">@ViewBag.Search İçin Sonuçlar</h3>
+            </header>
+            <div class="row">
+                @foreach (var item in products)
+                {
+                    <div class="col-md-4">
+                        @await Html.PartialAsync("_product", item)
+                    </div>
+                }
+            </div>
+        }
+    </div>
+</section>

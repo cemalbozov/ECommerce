@@ -1,0 +1,31 @@
+﻿@model LoginModel
+<div class="mx-auto" style="max-width:40rem">
+
+    <div class="welcome text-center my-3">
+        <h4 class="fw-bold">Hoşgeldiniz</h4>
+    </div>
+
+    <form asp-controller="Account" asp-action="Login" class="p-5 login-form" method="POST">
+        @if (Model.ReturnUrl != null)
+        {
+            <input type="hidden" name="ReturnUrl" value="@Model.ReturnUrl" />
+        }
+        <div asp-validation-summary="All" class="text-danger"></div>
+
+        <input class="form-control mb-3" asp-for="Email" placeholder="E-posta">
+        <span asp-validation-for="Email" class="text-danger"></span>
+
+        <input class="form-control mb-3" asp-for="Password" placeholder="Şifreniz">
+        <span asp-validation-for="Password" class="text-danger"></span>
+
+        <div class="d-grid  mx-auto mb-3">
+            <button type="submit" class="btn btn-primary btn-login">Giriş Yap</button>
+        </div>
+    </form>
+    <div class="text-center my-3">
+        <a href="/account/forgotpassword">Şifremi Unuttum</a>
+    </div>
+    <div class="text-center my-3">
+        <span>Üye değil misiniz? <a href="/account/register">Hemen üye olun!</a></span>
+    </div>
+</div>

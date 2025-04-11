@@ -1,0 +1,57 @@
+﻿@model List<OrderListModel>
+
+<section>
+        <div class="row gy-3">
+            @await Component.InvokeAsync("AccountSideBar")
+            <div class="col-lg-9 mb-4">
+                <div class="acc-title">Siparişlerim</div>
+                @foreach (var order in Model)
+                {
+            <table class="table table-bordered table-sm mb-3">
+                <thead class="bg-secondary text-white">
+                    <tr>
+                        <td colspan="2">Sipariş Numarası : #@order.OrderNumber</td>
+                        <th>Fiyat</th>
+                        <th>Miktar</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in order.OrderItems)
+                    {
+                        <tr>
+                            <td><img src="~/img/@item.ImageUrl" width="50" /></td>
+                            <td>@item.Name</td>
+                            <td>@item.Price</td>
+                            <td>@item.Quantity</td>
+                        </tr>
+                    }
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="2">Müşteri Adı</td>
+                        <td>@order.FirstName @order.LastName</td>
+                        <td rowspan="6">Toplam: @order.TotalPrice().ToString("0,000.00") ₺</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Adres: </td>
+                        <td>@order.Address</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">E-Posta: </td>
+                        <td>@order.Email</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Telefon: </td>
+                        <td>@order.Phone</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Sipariş Durumu : </td>
+                        <td>@order.OrderState</td>
+                    </tr>
+                </tfoot>
+            </table>
+                }
+            </div>
+
+        </div>
+</section>

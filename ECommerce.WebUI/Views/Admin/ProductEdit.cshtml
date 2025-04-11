@@ -1,0 +1,135 @@
+﻿@model ProductModel
+
+<section>
+    <div class="container my-5">
+        <div class="row gy-3">
+            @await Html.PartialAsync("_sidebar")
+            <div class="col-lg-9">
+
+                <div class="acc-title">Ürün Düzenle</div>
+
+                <div class="acc-form">
+                    <form name="adress-form" class="row g-1 mb-4" asp-controller="Admin" asp-action="ProductEdit" method="POST" enctype="multipart/form-data">
+                        <div asp-validation-summary="All" class="text-danger"></div>
+                        <input type="hidden" name="Id" value="@Model.Id" />
+                        <div class="col-12 col-lg-6">
+                            <label asp-for="Name" class="form-text"></label>
+                            <input class="form-control" asp-for="Name">
+                            <span asp-validation-for="Name" class="text-danger"></span>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <label asp-for="Url" class="form-text"></label>
+                            <input class="form-control" asp-for="Url">
+                            <span asp-validation-for="Url" class="text-danger"></span>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <label class="form-text" asp-for="Brand"></label>
+                            <select asp-for="Brand.Id" asp-items="@(new SelectList(Model.AllBrands, "Id", "Name"))" class="form-control">
+                            </select>
+                            <span asp-validation-for="Brand" class="text-danger"></span>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <label asp-for="Price" class="form-text"></label>
+                            <input class="form-control" asp-for="Price">
+                            <span asp-validation-for="Price" class="text-danger"></span>
+                        </div>
+                        <div id="form-attributes" class="form-attributes col-12 my-4">
+                            @if (Model.ProductAttributes != null)
+                            {
+                                @for (int i = 0; i < Model.ProductAttributes.Count(); i++)
+                                {
+                                    <input type="hidden" asp-for="ProductAttributes[i].Id" />
+                                    <div class="row mx-0 px-0 py-1">
+                                        <div class="col-12 col-lg-6 px-0">
+                                            <label class="form-text">Özellik Adı</label>
+                                            <input class="form-control " asp-for="ProductAttributes[i].Name">
+                                            <span asp-validation-for="ProductAttributes[i].Name" class="text-danger"></span>
+                                        </div>
+                                        <div class="col-12 col-lg-6 px-0">
+                                            <label class="form-text">Özellik Değeri</label>
+                                            <input class="form-control " asp-for="ProductAttributes[i].Value">
+                                            <span asp-validation-for="ProductAttributes[i].Value" class="text-danger"></span>
+                                        </div>
+                                    </div>
+                                }
+                            }
+                        </div>
+                        <div class="col-12 text-center my-4">
+                            <button type="button" class="btn btn-secondary" onclick="addNewAttribute()">Yeni Özellik Ekle</button>
+                        </div>
+
+                        <div class="col-12">
+                            <label asp-for="Description" class="form-text"></label>
+                            <textarea id="editor" class="form-control add-adress" asp-for="Description"></textarea>
+                            <span asp-validation-for="Description" class="text-danger"></span>
+                        </div>
+                        <div class="col-12">
+                            <label asp-for="ImageUrl" class="form-text"></label>
+                            <input type="hidden" asp-for="ImageUrl">
+                            <img src="~/img/@Model.ImageUrl" width="80" />
+                            <input type="file" name="file"/>
+                        </div>
+                        <div class="row">
+                            @for (int i = 0; i < Model.SelectedCategories.Count; i++)
+                            {
+                                <input type="hidden" name="SelectedCategories[@i].Id" value="@Model.SelectedCategories[i].Id" />
+                                <input type="hidden" name="SelectedCategories[@i].Name" value="@Model.SelectedCategories[i].Name" />
+                            }
+                            <label asp-for="SelectedCategories" class="form-text my-4"></label>
+                            @foreach (var category in (List<Category>)ViewBag.Categories)
+                            {
+                                <div class="form-check col-6 col-lg-4">
+                                    <input class="form-check-input" type="checkbox"
+                                           value="@category.Id"
+                                           name="categoryIds"
+                                           id="category_@(category.Id)"
+                                           @(Model.SelectedCategories.Any(c => c.Id == category.Id) ? "checked" : "")>
+                                    <label class="form-check-label" for="category_@(category.Id)">
+                                        @category.Name
+                                    </label>
+                                </div>
+                            }
+                        </div>
+
+                        <div class="form-check col-6 my-4">
+                            <input asp-for="IsApproved" class="form-check-input" type="checkbox">
+                            <label asp-for="IsApproved" class="form-check-label"></label>
+                        </div>
+
+                        <div class="form-check col-6 my-4">
+                            <input asp-for="IsHome" class="form-check-input" type="checkbox">
+                            <label asp-for="IsHome" class="form-check-label"></label>
+                        </div>
+
+                        <div class="col-12 text-center my-4">
+                            <button type="submit" class="btn btn-secondary">Kaydet</button>
+                        </div>
+                    </form>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="~/lib/ckeditor/ckeditor.js"></script>
+<script>
+    function addNewAttribute() {
+        const attr_div = document.querySelector(".form-attributes");
+        
+        var newAttributeHtml = `
+            <div class="row mx-0 px-0 py-1">
+                    <div class="col-12 col-lg-6 px-0">
+                        <div class="form-text">Özellik Adı</div>
+                        <input type="text" class="form-control " name="attributeNames">
+                    </div>
+                    <div class="col-12 col-lg-6 px-0">
+                        <div class="form-text">Özellik Değeri</div>
+                        <input type="text" class="form-control " name="attributeValues">
+                    </div>
+            </div>
+        `;
+        attr_div.insertAdjacentHTML("beforeend", newAttributeHtml);
+    }
+    CKEDITOR.replace("editor");
+</script>

@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+          integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+    @RenderSection("Css",false)
+    <link rel="stylesheet" href="/css/style.css">
+    <title>ECommerce</title>
+</head>
+<body>
+
+    @await Html.PartialAsync("_navbar")
+    @await Component.InvokeAsync("Categories")
+
+    <main class="my-3">
+        <div class="container ">
+            <div class="row">
+                <div class="col-md-12">
+                    @if (TempData["message"] != null)
+                    {
+                        <partial name="_ResultMessage" model="@(TempData.Get<AlertMessage>("message"))"/>
+                    }
+                    @RenderBody()
+                </div>
+            </div>
+        </div>
+    </main>
+    @await Html.PartialAsync("_footer")
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/lib/jquery-validate/jquery.validate.min.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+    @RenderSection("Scripts",false)
+
+</body>
+</html>

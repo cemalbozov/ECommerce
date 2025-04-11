@@ -1,0 +1,35 @@
+﻿@model RegisterModel
+<div class="mx-auto" style="max-width:40rem">
+
+    <div class="welcome text-center my-3">
+        <h4 class="fw-bold">Hoşgeldiniz</h4>
+    </div>
+
+    <form asp-controller="Account" asp-action="Register" class="p-5 login-form" method="POST">
+        <div asp-validation-summary="All" class="text-danger"></div>
+        <div class="row g-1 mb-3">
+            <div class="col">
+                <input class="form-control" asp-for="FirstName" placeholder="Adınız">
+                <span asp-validation-for="FirstName" class="text-danger"></span>
+            </div>
+            <div class="col">
+                <input class="form-control" asp-for="LastName" placeholder="Soyadınız">
+                <span asp-validation-for="LastName" class="text-danger"></span>
+            </div>
+        </div>
+        <input class="form-control mb-3" asp-for="Email" placeholder="E-posta">
+        <span asp-validation-for="Email" class="text-danger"></span>
+
+        <input class="form-control mb-3" asp-for="PhoneNumber" placeholder="Telefon Numaranız">
+        <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+
+        <input class="form-control mb-3" asp-for="Password" placeholder="Şifreniz">
+        <span asp-validation-for="Password" class="text-danger"></span>
+        <input class="form-control mb-3" asp-for="RePassword" placeholder="Şifreniz (tekrar)">
+        <span asp-validation-for="RePassword" class="text-danger"></span>
+
+        <div class="d-grid  mx-auto mb-3">
+            <button type="submit" class="btn btn-primary btn-login">ÜYE OL</button>
+        </div>
+    </form>
+</div>

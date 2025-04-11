@@ -1,0 +1,87 @@
+﻿@model OrderModel
+
+<div class="row">
+    <div class="col-lg-8">
+        <div class="cart-title mb-4">Sipariş Detayı</div>
+        <div class="acc-form">
+            <form method="POST" asp-controller="Cart" asp-action="Checkout">
+                <input type="hidden" name="cartId" value="0" />
+                <div class="row mb-3">
+                    <div class="col-12 col-lg-6">
+                        <label asp-for="@Model.FirstName"></label>
+                        <input asp-for="@Model.FirstName" class="form-control">
+                    </div>
+                    <div class="col-12 col-lg-6 ">
+                        <label asp-for="@Model.LastName"></label>
+                        <input asp-for="@Model.LastName" class="form-control">
+                    </div>
+                </div>
+                <div class="col-12 mb-3">
+                    <label asp-for="@Model.Address"></label>
+                    <textarea asp-for="@Model.Address" class="form-control"></textarea>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-12 col-lg-4">
+                        <label asp-for="@Model.City"></label>
+                        <input asp-for="@Model.City" class="form-control">
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <label asp-for="@Model.Phone"></label>
+                        <input asp-for="@Model.Phone" class="form-control">
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <label asp-for="@Model.Email"></label>
+                        <input asp-for="@Model.Email" class="form-control">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="cart-title mb-4">Ödeme Bilgileri</div>
+                    <div class="col-12 col-lg-6">
+                        <label asp-for="@Model.CardName"></label>
+                        <input asp-for="@Model.CardName" class="form-control">
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <label asp-for="@Model.CardNumber"></label>
+                        <input asp-for="@Model.CardNumber" class="form-control">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-12 col-lg-4">
+                        <label asp-for="@Model.ExpirationMonth"></label>
+                        <input asp-for="@Model.ExpirationMonth" class="form-control">
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <label asp-for="@Model.ExpirationYear"></label>
+                        <input asp-for="@Model.ExpirationYear" class="form-control">
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <label asp-for="@Model.Cvc"></label>
+                        <input asp-for="@Model.Cvc" class="form-control">
+                    </div>
+                </div>
+                <div class="col-12 text-center my-4">
+                    <button type="submit" class="btn btn-secondary">Siparişi Tamamla</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="col-lg-4 order-first order-lg-last">
+        <div class="cart-title mb-4">Sipariş Özeti</div>
+        <ul class="list-group mb-3">
+            @foreach (var item in Model.CartModel.CartItems)
+            {
+                <li class="list-group-item d-flex justify-content-between">
+                    <div>
+                        <h6>@item.Name</h6>
+                        <small class="text-muted">@item.Quantity.ToString() Adet</small>
+                    </div>
+                    <span class="text-muted">@item.Price.Value.ToString("0,000.00") ₺</span>
+                </li>
+            }
+            <li class="list-group-item d-flex justify-content-between">
+                <span>Toplam (₺)</span>
+                <strong>@Model.CartModel.TotalPrice().ToString("0,000.00") ₺</strong>
+            </li>
+        </ul>
+    </div>
+</div>

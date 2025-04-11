@@ -1,0 +1,70 @@
+﻿@model ECommerce.WebUI.ViewModels.CategoryListViewModel
+
+@{
+    var categories = Model.Categories;
+}
+
+<section>
+    <div class="container my-5">
+        <div class="row gy-3">
+            @await Html.PartialAsync("_sidebar")
+            <div class="col-lg-9">
+
+                <div class="acc-title">Kategoriler</div>
+
+                <a href="/admin/categories/create" class="btn btn-primary">Kategori Ekle</a>
+                <div class="row">
+                    @if (categories.Count > 0)
+                    {
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <td style="width: 30px">Id</td>
+                                    <td style="width: 100px">Name</td>
+                                    <td style="width: 30px">Parent Category Id</td>
+                                    <td style="width: 100px">Parent Category Name</td>
+                                    <td style="width: 50px"></td>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                                @foreach (var category in categories)
+                                {
+                                <tr>
+                                    <td>@category.Id</td>
+                                    <td>@category.Name</td>
+                                    @if (category.ParentCategory != null)
+                                    {
+                                        <td>@category.ParentCategory.Id</td>
+                                        <td>@category.ParentCategory.Name</td>
+                                    }
+                                    else
+                                    {
+                                        <td></td>
+                                        <td></td>
+                                    }
+                                    <td>
+                                        <a href="/admin/categories/@category.Id" class="float-start btn btn-outline-secondary btn-icon">Edit</a>
+                                        <form action="/admin/deletecategory" method="POST">
+                                            <input type="hidden" name="Id" value="@category.Id">
+                                            <button type="submit" class="float-end btn btn-outline-danger btn-icon" onclick="return confirm('Silmek istediğinizden emin misiniz ?')">
+                                                <i class="fa-solid fa-trash btn-icon"></i>
+                                            </button>
+                                        </form>
+                                    </td>
+                                </tr>
+                                }
+                            </tbody>
+                        </table>
+                    }
+                    else
+                    {
+                        <div class="alert alert-warning">
+                            <h3>Kategori Bulunamadı</h3>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

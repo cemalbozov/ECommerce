@@ -1,0 +1,83 @@
+﻿@model UserDetailsModel
+
+<section>
+    <div class="container my-5">
+        <div class="row gy-3">
+            @await Html.PartialAsync("_sidebar")
+            <div class="col-lg-9">
+
+                <div class="acc-title">Kullanıcı Düzenle</div>
+
+                <div class="row">
+                    <div class="acc-form">
+                        <form name="adress-form" class="row g-1 mb-4" asp-controller="Admin" asp-action="UserEdit" method="POST">
+                            <div asp-validation-summary="All" class="text-danger"></div>
+                            <input type="hidden" name="Id" value="@Model.Id" />
+                            <div class="col-12 col-lg-6">
+                                <label asp-for="FirstName" class="form-text"></label>
+                                <input class="form-control" asp-for="FirstName">
+                                <span asp-validation-for="FirstName" class="text-danger"></span>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <label asp-for="LastName" class="form-text"></label>
+                                <input class="form-control" asp-for="LastName">
+                                <span asp-validation-for="LastName" class="text-danger"></span>
+                            </div>
+                            <div class="col-12">
+                                <label asp-for="Email" class="form-text"></label>
+                                <input class="form-control" asp-for="Email">
+                                <span asp-validation-for="Email" class="text-danger"></span>
+                            </div>
+                            <div class="form-check col-12">
+                                <input asp-for="EmailConfirmed" class="form-check-input" type="checkbox">
+                                <label asp-for="EmailConfirmed" class="form-check-label"></label>
+                            </div>
+                            <div class="row">
+                                <label class="form-text my-4">Roller</label>
+                                @foreach (var rolename in ViewBag.Roles)
+                                {
+                                    <div class="form-check col-6 col-lg-4">
+                                        <input class="form-check-input" type="checkbox"
+                                               value="@rolename"
+                                               name="selectedRoles"
+                                               id="@rolename"
+                                               @(Model.SelectedRoles.Any(r => r == rolename) ? "checked" : "")>
+                                        <label class="form-check-label" for="@rolename)">
+                                            @rolename
+                                        </label>
+                                    </div>
+                                }
+                            </div>
+
+                            <div class="col-12 text-center my-4">
+                                <button type="submit" class="btn btn-secondary">Kaydet</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="~/lib/ckeditor/ckeditor.js"></script>
+<script>
+    function addNewAttribute() {
+        const attr_div = document.querySelector(".form-attributes");
+
+        var newAttributeHtml = `
+            <div class="row mx-0 px-0 py-1">
+                    <div class="col-12 col-lg-6 px-0">
+                        <div class="form-text">Özellik Adı</div>
+                        <input type="text" class="form-control " name="attributeNames">
+                    </div>
+                    <div class="col-12 col-lg-6 px-0">
+                        <div class="form-text">Özellik Değeri</div>
+                        <input type="text" class="form-control " name="attributeValues">
+                    </div>
+            </div>
+        `;
+        attr_div.insertAdjacentHTML("beforeend", newAttributeHtml);
+    }
+    CKEDITOR.replace("editor");
+</script>

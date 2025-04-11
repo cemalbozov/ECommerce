@@ -1,0 +1,35 @@
+﻿@model Product
+
+<figure class="card shadow">
+    <a asp-controller="shop" asp-action="details" asp-route-url="@Model.Url" class="img-wrap">
+        @if (Model.Discount) {
+            <b class="badge bg-success"> İndirim </b>
+        }
+        <img src="~/img/@Model.ImageUrl" alt="">
+    </a>
+    <figcaption class="info-wrap border-top">
+
+        <form asp-controller="Cart" asp-action="AddToCart" method="POST">
+            <input type="hidden" name="ProductId" value="@Model.Id">
+            <input type="hidden" name="quantity" value="1">
+            <button type="submit" class="float-end btn btn-outline-primary btn-icon">
+                <i class="fas fa-cart-plus"></i>
+            </button>
+
+        </form>
+        <a asp-controller="shop" asp-action="details" asp-route-url="@Model.Url" class="title text-truncate">
+            @Model.Name
+        </a>
+        <div class="price-wrap">
+            @if (Model.Discount)
+            { 
+                <span class="price">@Model.DiscPrice ₺</span>
+                <del class="price-old px-1">@Model.Price ₺</del>
+            }
+            else
+            {
+                <span class="price">@Model.Price ₺</span>
+            }
+        </div>
+    </figcaption>
+</figure>

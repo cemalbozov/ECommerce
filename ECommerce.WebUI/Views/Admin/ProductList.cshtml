@@ -1,0 +1,84 @@
+﻿@model ECommerce.WebUI.ViewModels.ProductListViewModel
+
+@{
+    var products = Model.Products;
+}
+
+<section>
+    <div class="container my-5">
+        <div class="row gy-3">
+            @await Html.PartialAsync("_sidebar")
+            <div class="col-lg-9">
+
+                <div class="acc-title">Ürünler</div>
+
+                <a href="/admin/products/create" class="btn btn-primary">Ürün Ekle</a>
+                <div class="row">
+
+                    @if (products.Count > 0)
+                    {
+                        @foreach (var product in products)
+                        {
+                            <div class="col-xl-4 col-lg-6 col-md-12">
+                                <figure class="card shadow">
+                                    <a href="/admin/products/@product.Id" class="img-wrap">
+                                        @if (product.Discount)
+                                        {
+                                            <b class="badge bg-success"> İndirim </b>
+                                        }
+                                        <img src="~/img/@product.ImageUrl" alt="">
+                                    </a>
+                                    <figcaption class="info-wrap border-top">
+                                        @if (product.IsApproved)
+                                        {
+                                            <i class="fa-solid fa-check-circle text-success"></i>
+                                        }
+                                        else
+                                        {
+                                            <i class="fa-solid fa-times-circle text-danger"></i>
+                                        }
+                                        @if (product.IsHome)
+                                        {
+                                            <i class="fa-solid fa-house text-success"></i>
+                                        }
+                                        else
+                                        {
+                                            <i class="fa-solid fa-house text-danger"></i>
+                                        }
+                                        <form action="/admin/deleteproduct" method="POST">
+                                            <input type="hidden" name="Id" value="@product.Id">
+                                            <button type="submit" class="float-end btn btn-outline-danger btn-icon" onclick="return confirm('Silmek istediğinizden emin misiniz ?')">
+                                                <i class="fa-solid fa-trash btn-icon"></i>
+                                            </button>
+                                        </form>
+                                        <a href="/admin/products/@product.Id" class="title text-truncate">
+                                            @product.Name
+                                        </a>
+                                        <div class="price-wrap">
+                                            @if (product.Discount)
+                                            {
+                                                <span class="price">@product.DiscPrice ₺</span>
+                                                <del class="price-old px-1">@product.Price ₺</del>
+                                            }
+                                            else
+                                            {
+                                                <span class="price">@product.Price ₺</span>
+                                            }
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        }
+                    }
+                    else
+                    {
+                        <header>
+                            <h3 class="mb-md-3 mb-0">No Products</h3>
+                        </header>
+                        @await Html.PartialAsync("_noproduct")
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

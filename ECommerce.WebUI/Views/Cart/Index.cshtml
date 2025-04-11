@@ -1,0 +1,123 @@
+﻿@model CartModel
+
+    <section>
+        <div id="iyzipay-checkout-form" class="popup"></div>
+        <div>
+            <div class="row gy-3 py-4">
+                @if (Model.CartItems.Count != 0)
+                {
+                    <div class="col-12 col-lg-7">
+                        <div class="cart" style="min-height: 500px;">
+                            <div class="cart-title">Sepetim</div>
+                            <div class="cart-rows">
+                                @foreach (var item in Model.CartItems)
+                                {
+                                    <div class="cart-row my-5">
+                                        <div class="cart-prd pb-5">
+                                            <div class="d-flex flex-row">
+                                                <div class="prd-image">
+                                                    <img src="~/img/@item.ImageUrl" alt="">
+                                                </div>
+                                                <div class="prd-body">
+                                                    <div class="prd-title">
+                                                        <a href="/product/@item.ProductId">@item.Name</a>
+                                                    </div>
+                                                    <div class="prd-info">
+                                                        <span>Marka : </span>
+                                                        <b>@item.Brand.Name</b>
+                                                    </div>
+                                                    <div class="prd-info">
+                                                        <span>Ürün Kodu : </span>
+                                                        <b>@item.ProductId</b>
+                                                    </div>
+                                                    @if (item.Discount)
+                                                    {
+                                                        <div class="prd-amount my-3 "><b>@item.DiscPrice.Value.ToString("0,000.00") ₺</b></div>
+                                                    }
+                                                    else
+                                                    {
+                                                        <div class="prd-amount my-3 "><b>@item.Price.Value.ToString("0,000.00") ₺</b></div>
+                                                    }
+                                                </div>
+                                                <div class="delete-prd">
+                                                    <form asp-controller="Cart" asp-action="DeleteFromCart" method="POST">
+                                                        <input type="hidden" name="productId" value="@item.ProductId">
+                                                        <button type="submit" class="btn">
+                                                            <i class="fa-solid fa-trash btn-icon"></i>
+                                                        </button>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                }
+                            </div>
+                            <div class="cart-links d-flex justify-content-between">
+                                <div><a href="/" class="cart-link">Alışverişe Devam Et</a></div>
+                                <div>
+                                    <form action="/users/shopcart/delete/deleteall?_method=DELETE" method="POST">
+                                        <input type="hidden" name="_method" value="DELETE">
+                                        <button type="submit" class="btn btn-link cart-link p-0">Sepeti Boşalt</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-5">
+                        <div class="cart-sum">
+                            <div class="cart-title">Sipariş Özeti</div>
+
+                            <div class="cart-size">@Model.TotalProduct().ToString() Ürün</div>
+                            <div class="card-prc-table">
+                                <table class="table">
+                                    <tbody>
+                                        <tr>
+                                            <td class="p-0">Sipariş Tutarı (KDV Dahil)</td>
+                                            <th class="p-0">@Model.TotalPrice().ToString("0,000.00") ₺ </th>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="d-grid  mx-auto mt-5">
+                                @*{{#if adresses}}*@
+                                <form asp-controller="Cart" asp-action="Checkout" method="get">
+                                    @*<div class="mb-3">
+                                        <div class="form-text">Teslimat Adresi</div>
+
+                                        <select class="form-control" name="adress" id="">
+                                            {{#each adresses}}
+                                            <option value="{{this.AdressId}}">{{this.adress_h}}</option>
+                                            {{/each}}
+                                        </select>
+                                    </div>*@
+                                    <div class="d-block d-grid gap-2">
+                                        <button type="submit" class="btn btn-primary btn-sepet">Siparişi Tamamla</button>
+                                    </div>
+                                </form>
+                                @*{{else}}
+                                <a href="/account/adreslerim" class="btn btn-link p-0 m-0">
+                                    Sipariş vermek için adres
+                                    ekleyiniz
+                                </a>*@
+                            </div>
+                            @*{{/if}}*@
+                        </div>
+                    </div>
+                }
+                else
+                {
+                    <div class="cart-title py-4">
+                        Sepetim
+                    </div>
+                    <div class="cart-empty-body d-flex flex-column align-items-center my-5" style="min-height: 500px;">
+                        <div class="cart-empty-info fs-4 fw-bolder pb-3 ">
+                            Sepetinizde ürün bulunmamaktadır
+                        </div>
+                        <div class="cart-empty-button">
+                            <a class="btn btn-lg btn-primary" style="border-radius: 15px; color:white" href="/"><span>Alışverişe Başla</span></a>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </section>
